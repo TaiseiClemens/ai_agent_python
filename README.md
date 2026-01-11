@@ -145,15 +145,10 @@ The AI model uses this information to decide when and how to call each function.
 The project includes unit tests for each function:
 
 ```bash
-python -m pytest test_get_files_info.py
-python -m pytest test_get_file_content.py
-python -m pytest test_run_python_file.py
-python -m pytest test_write_file.py
-```
-
-Or run all tests:
-```bash
-python -m pytest
+uv run test_get_files_info.py
+uv run test_get_file_content.py
+uv run test_run_python_file.py
+uv run test_write_file.py
 ```
 
 ## Configuration
@@ -183,14 +178,6 @@ The calculator directory contains a main.py file along with some text files
 and a pkg subdirectory. The main.py file appears to be an entry point that
 imports from the pkg.calculator and pkg.render modules...
 ```
-
-## Contributing
-
-This is a learning project from Boot.dev. Feel free to fork and experiment with:
-- Adding new function capabilities
-- Improving error handling
-- Implementing different AI models
-- Expanding the security sandbox
 
 ## License
 
